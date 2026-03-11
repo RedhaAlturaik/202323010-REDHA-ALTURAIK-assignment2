@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>REDHA AZIZ | Portfolio</title>
+    <meta name="description" content="Portfolio website of REDHA AZIZ: projects, skills, and contact." />
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span>REDHA AZIZ</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="sr-only">Open menu</span>
+            <span class="burger" aria-hidden="true"></span>
+          </button>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+          <span class="theme-text">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section">
+        <div class="container hero-inner">
+          <div>
+            <p class="eyebrow">IT & Software Development Specialist</p>
+            <h1>Hi, I’m <span class="accent">REDHA AZIZ</span>.</h1>
+            <p class="lead">
+              I have the ability to build responsive websites and interactive web experiences using HTML, CSS, and JavaScript.<br>
+              I gained hands-on experience as IT Support and improved user productivity. I pride myself on turning technical frustrations into seamless solutions for my clients.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact Me</a>
+            </div>
+
+            <ul class="stats" aria-label="Quick stats">
+              <li><strong>3+</strong><span>Projects</span></li>
+              <li><strong>HTML</strong><span>Semantic</span></li>
+              <li><strong>JS</strong><span>Interactive</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" role="img" aria-label="Profile placeholder card">
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="hero-card-text">
+              <p class="muted">Currently learning:</p>
+              <p><strong>Web development</strong></p>
+              <p class="muted">Location:</p>
+              <p><strong>Eastern Province</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <h2>About me</h2>
+          <p>
+            I am a Goal-Oriented Computer & Information Science student. I am capable of working under pressure, independently as well as in teams, with attention to detail and the ability to adapt to new technologies and the latest trends. My skills include customer service to improve IT operations efficiency, web development, application development, database engineering, computer hardware maintenance, and programming languages. My goal is to become an indispensable asset to an organization by contributing to the achievement of its mission and building strong relationships.
+          </p>
+
+          <div class="callout">
+            <h3>What I'm focusing on this term</h3>
+            <ul>
+              <li>Gain hands-on experience by creating real-world projects</li>
+              <li>Learn and take online courses</li>
+              <li>Enhance my skills</li>
+              <li>Learn more about my major courses</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="chips" role="list">
+            <span class="chip" role="listitem">HTML5</span>
+            <span class="chip" role="listitem">CSS3</span>
+            <span class="chip" role="listitem">JavaScript</span>
+            <span class="chip" role="listitem">Git/GitHub</span>
+            <span class="chip" role="listitem">Python</span>
+            <span class="chip" role="listitem">Java</span>
+            <span class="chip" role="listitem">ASP.NET</span>
+            <span class="chip" role="listitem">SQL Server</span>
+            <span class="chip" role="listitem">C#</span>
+            <span class="chip" role="listitem">Penetration Testing</span>
+            <span class="chip" role="listitem">Network Troubleshooting</span>
+            <span class="chip" role="listitem">Customer Service</span>
+            <span class="chip" role="listitem">PC Maintenance</span>
+            <span class="chip" role="listitem">MySQL</span>
+            <span class="chip" role="listitem">Technical Support</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Projects</h2>
+              <p class="muted">Search projects by title, description, or technology.</p>
+            </div>
+          </div>
+
+          <div class="project-controls">
+            <label for="projectSearch" class="search-label">Search Projects</label>
+            <input
+              type="text"
+              id="projectSearch"
+              class="search-input"
+              placeholder="Type to search projects..."
+              aria-describedby="searchHelp"
+            />
+            <p id="searchHelp" class="muted search-help">
+              Example: HTML, Python, Quiz, Library
+            </p>
+          </div>
+
+          <p id="projectsStatus" class="projects-status" role="status" aria-live="polite"></p>
+          <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="muted">This form validates your input and gives instant feedback.</p>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <small class="error" data-error-for="name"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <small class="error" data-error-for="email"></small>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <small class="error" data-error-for="message"></small>
+            </div>
+
+            <button class="btn primary" type="submit">Send</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> REDHA AZIZ.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
