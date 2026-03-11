@@ -46,11 +46,3 @@ AI was used to help with the more difficult JavaScript logic, especially:
 More details are available in:
 
 `docs/ai-usage-report.md`
-
-## Optional Live Deployment
-
-Add your live deployment link here if published:
-
-- GitHub Pages:
-- Netlify:
-- Vercel:
